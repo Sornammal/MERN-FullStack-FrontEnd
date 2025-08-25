@@ -66,7 +66,7 @@ function ProductDetail() {
         {/* Product Image */}
         <div>
           <img
-            src={`https://mern-fullstack-backend-1.onrender.com${product.image}`}
+            src={`https://mern-fullstack-backend-1.onrender.com${product?.image}`}
             alt={product.name}
             className="w-full rounded-lg shadow"
           />
@@ -74,16 +74,16 @@ function ProductDetail() {
 
         {/* Product Info */}
         <div className="space-y-6">
-          <h1 className="text-3xl font-bold">{product.name}</h1>
+          <h1 className="text-3xl font-bold">{product?.name}</h1>
           <p className="text-gray-700">
-            {product.description || `This is a detailed description of ${product.name}.`}
+            {product?.description || `This is a detailed description of ${product?.name}.`}
           </p>
           <p className="text-2xl font-semibold text-blue-600">
-            ${product.price.toFixed(2)}
+            ${product?.price?.toFixed(2)}
           </p>
 
           {/* Quantity Selector */}
-          {product.countInStock > 0 ? (
+          {product?.countInStock > 0 ? (
             <div className="flex items-center gap-4">
               <label className="font-medium">Quantity:</label>
               <select
@@ -104,7 +104,7 @@ function ProductDetail() {
 
           {/* Add to Cart */}
           <button
-            disabled={product.countInStock === 0}
+            disabled={product?.countInStock === 0}
             onClick={handleAddToCart}
             className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-500 disabled:bg-gray-400"
           >

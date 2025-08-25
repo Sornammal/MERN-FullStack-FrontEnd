@@ -57,18 +57,18 @@ function Products() {
           filteredProducts.map((product) => (
             // <div>{product.name}</div>
             <div
-              key={product.id}
+              key={product?.id}
               className="bg-white shadow rounded-lg p-4 hover:shadow-lg transition"
             >
               <img
-                src={`https://mern-fullstack-backend-1.onrender.com${product.image}`}
-                alt={product.name}
+                src={`https://mern-fullstack-backend-1.onrender.com${product?.image}`}
+                alt={product?.name}
                 className="rounded mb-3"
               />
-              <h3 className="font-semibold text-lg">{product.name}</h3>
-              <p className="text-gray-600">${product.price.toFixed(2)}</p>
+              <h3 className="font-semibold text-lg">{product?.name}</h3>
+              <p className="text-gray-600">${product?.price?.toFixed(2)}</p>
               <Link
-                to={`/products/${product._id}`}
+                to={`/products/${product?._id}`}
                 className="mt-3 inline-block text-sm text-blue-600 hover:underline"
               >
                 View Details

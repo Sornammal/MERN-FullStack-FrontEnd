@@ -38,12 +38,12 @@ function Cart() {
             {cartItems.length > 0 ? (
               cartItems.map((item) => (
                 <div
-                  key={item._id}
+                  key={item?._id}
                   className="flex flex-col sm:flex-row items-center sm:items-start bg-white shadow rounded-lg p-4"
                 >
                   <img
                     src={`https://mern-fullstack-backend-1.onrender.com${item?.product?.image}`}
-                    alt={item.name}
+                    alt={item?.name}
                     className="w-24 h-24 sm:w-20 sm:h-20 rounded mb-2 sm:mb-0 sm:mr-4"
                   />
                   <div className="flex-1 text-center sm:text-left">
@@ -53,8 +53,8 @@ function Cart() {
 
                   {/* Quantity selector */}
                   <select
-                    value={item.qty}
-                    onChange={(e) => updateQty(item?.product._id, e.target.value)}
+                    value={item?.qty}
+                    onChange={(e) => updateQty(item?.product?._id, e.target.value)}
                     className="border rounded px-2 py-1 mb-2 sm:mb-0 sm:mr-4"
                   >
                     {[...Array(10).keys()].map((x) => (
