@@ -49,9 +49,9 @@ function Home() {
                   <div
                     key={p._id}
                     className="bg-white shadow rounded-lg p-4 hover:shadow-lg transition"
-                  >
+                  >                  
                     <img
-                      src={`https://mern-fullstack-backend-1.onrender.com${p.image}`}
+                      src={p.image}
                       alt={p.name}
                       onError={(e) => {
                         e.currentTarget.onerror = null;

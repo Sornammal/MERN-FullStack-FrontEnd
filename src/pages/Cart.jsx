@@ -42,7 +42,7 @@ function Cart() {
                   className="flex flex-col sm:flex-row items-center sm:items-start bg-white shadow rounded-lg p-4"
                 >
                   <img
-                    src={`https://mern-fullstack-backend-1.onrender.com${item?.product?.image}`}
+                    src={item?.product?.image}
                     alt={item?.name}
                     className="w-24 h-24 sm:w-20 sm:h-20 rounded mb-2 sm:mb-0 sm:mr-4"
                   />
