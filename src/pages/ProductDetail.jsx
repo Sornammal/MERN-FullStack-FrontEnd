@@ -66,7 +66,7 @@ function ProductDetail() {
         {/* Product Image */}
         <div>
           <img
-            src={`http://localhost:5000${product.image}`}
+            src={`https://mern-fullstack-backend-1.onrender.com${product.image}`}
             alt={product.name}
             className="w-full rounded-lg shadow"
           />

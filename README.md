@@ -67,7 +67,7 @@ It's used to send HTTP requests (GET, POST, etc.) to your Express backend.
 
 You can configure:
 
-baseURL: The API base path (http://localhost:5000/api)
+baseURL: The API base path (https://mern-fullstack-backend-1.onrender.com/api)
 
 Interceptors for attaching auth tokens to headers
 

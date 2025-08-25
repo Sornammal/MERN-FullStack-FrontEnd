@@ -61,7 +61,7 @@ function Products() {
               className="bg-white shadow rounded-lg p-4 hover:shadow-lg transition"
             >
               <img
-                src={`http://localhost:5000${product.image}`}
+                src={`https://mern-fullstack-backend-1.onrender.com${product.image}`}
                 alt={product.name}
                 className="rounded mb-3"
               />
