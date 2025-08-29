@@ -51,6 +51,9 @@ function ProductDetail() {
         await addToCart(product,qty);
         alert("Added to cart!");
       }
+      else{
+        alert("Login the website....Go to Login tab");
+      }
     } catch (error) {
       console.error("Error adding to cart:", error.response?.data || error.message);
       alert("Failed to add to cart.");
